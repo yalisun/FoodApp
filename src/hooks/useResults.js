@@ -11,11 +11,13 @@ export default () => {
         params: {
           limit: 50,
           term: searchTerm,
-          location: 'seattle'
+          location: 'San Jose'
         }
       });
       setResults(response.data.businesses); //update results
-    } catch (err) {
+    } 
+    catch (err) {
+        console.log(err);
         setErrorMessage('Something went wrong');
     }
   };

@@ -24,10 +24,10 @@ const styles = StyleSheet.create({
     marginTop: 10,
     backgroundColor: '#E3E3E5',
     height: 50,
-    borderRadius: 5, //圆角边框
+    borderRadius: 5, 
     marginHorizontal: 15,
     flexDirection: 'row',
-    // alignItems: 'center' //整体在中间
+    // alignItems: 'center' 
   },
   inputStyle: {
     // borderColor: 'black',
