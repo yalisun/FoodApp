@@ -9,9 +9,9 @@ export default () => {
     try {
       const response = await yelp.get('/search', {
         params: {
-          limit: 50,
+          limit: 80,
           term: searchTerm,
-          location: 'San Jose'
+          location: 'San Joes'
         }
       });
       setResults(response.data.businesses); //update results
@@ -25,7 +25,7 @@ export default () => {
   // call searchApi when component is first rendered.
   // searchApi('pasta'); // BAD CODE repetitive 
   useEffect(() => {
-    searchApi('pasta');
+    searchApi('cafe');
   }, []);
 
   return [searchApi, results, errorMessage];
